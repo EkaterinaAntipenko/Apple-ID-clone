@@ -1,0 +1,519 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+}
+
+@font-face {
+  font-family: "SFproText";
+  src: url("../fonts/SFProText-Light.ttf") format("truetype");
+  font-style: Light;
+  font-weight: Light;
+}
+
+@font-face {
+    font-family: "SFproText";
+    src: url("../fonts/SFProText-Medium.ttf") format("truetype");
+    font-style: medium;
+    font-weight: medium;
+  }
+  
+
+p{
+    font-family: "SFproText";
+}
+
+.chooseDev{
+    background-color: #1b191a;
+    width: 85%;
+    height: 3vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+}
+
+.navBlock {
+    display: flex;
+    background-color: #1b191a;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #fbfbfb;
+    font-size: 0.8vw;
+    font-family: "SFproText";
+}
+
+#logo {
+    width: 1.5vw;
+    height: 1.5vw;
+    background-image: url("../img/appleLogo.svg");
+    background-size: 1.5vw 1.5vw;
+}
+
+#search {
+    width: 1.5vw;
+    height: 1.5vw;
+    background-image: url("../img/search.svg");
+    background-size: 1.5vw 1.5vw;
+}
+
+#shop{
+    width: 1.5vw;
+    height: 1.5vw;
+    background-image: url("../img/cart.svg");
+    background-size: 3.5vw 3.8vw;
+    background-position: -1vw -1vw;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 6vw;
+}
+
+.navTip {
+    text-decoration: none;
+    color: #383532;
+    font-size: 2vw;
+    font-family: "SFproText";
+    font-style: medium;
+    font-weight: medium;
+    width: 60vw;
+}
+
+.navTipSignIn {
+    text-decoration: none;
+    color: #383532;
+    font-size: 1vw;
+    font-family: "SFproText";
+}
+
+.signIn {
+    display: flex;
+    width: 20vw;
+    justify-content: space-between;
+}
+
+.start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/back.jpg");
+    height: 18vw;
+    background-size: 100%;
+}
+
+#createId {
+    opacity: 0.7;
+}
+
+h1 {
+    color: #fbfbfb;
+    font-size: 4vw;
+    font-family: "SFproText";
+    font-style: medium;
+    font-weight: medium;
+    letter-spacing: -0.2vw;
+}
+
+.form {
+    width: 45vw;
+    margin: 3.5vw auto 2vw  auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#findLink {
+    color: #0070c9;
+    font-size: 1.6vw;
+    font-family: "SFproText";
+}
+
+.nameAndSurName label {
+    color: #0e0e0e;
+    font-size: 1.6vw;
+    font-family: "SFproText";
+    letter-spacing: -0.05vw;
+    text-align: center;
+    word-spacing: 0.08vw;
+    margin-bottom: 3vw;
+    width: 100%;
+    margin-bottom: 2vw;
+    line-height: 2.3vw;
+
+}
+
+.nameAndSurName {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1vw;
+}
+
+.name {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.surName {
+    width: 51%;
+}
+
+input {
+    padding-left: 1.5vw;
+    font-size: 1.6vw;
+    border: 0.15vw #d6d6d6 solid;
+    border-radius: 0.4vw;
+    margin-bottom: 1.5vw;
+ }
+
+ input ::placeholder{
+    color: #888888;
+ }
+
+ label {
+    color: #0e0e0e;
+    font-size: 1.3vw;
+    font-family: "SFproText";
+    letter-spacing: -0.05vw;
+    text-align: left;
+    word-spacing: 0.08vw;
+    margin-bottom: 3vw;
+    width: 100%;
+    margin-bottom: 0.2vw;
+    line-height: 1.8vw;
+    opacity: 0.7;
+ }
+
+ .label {
+    color: #0e0e0e;
+    font-size: 1.3vw;
+    font-family: "SFproText";
+    letter-spacing: -0.05vw;
+    text-align: left;
+    word-spacing: 0.08vw;
+    margin-bottom: 3vw;
+    width: 100%;
+    margin-bottom: 0.2vw;
+    line-height: 1.8vw;
+    opacity: 0.7;
+ }
+
+ legend {
+    color: #0e0e0e;
+    font-size: 1.3vw;
+    font-family: "SFproText";
+    letter-spacing: -0.05vw;
+    text-align: left;
+    word-spacing: 0.08vw;
+    margin-bottom: 3vw;
+    width: 100%;
+    margin-bottom: 0.2vw;
+    line-height: 1.8vw;
+    opacity: 0.7;
+ }
+
+ .countryAndRegion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+ }
+
+select {
+    padding-left: 1.5vw;
+    font-size: 2vw;
+    border: 0.15vw #d6d6d6 solid;
+    border-radius: 0.4vw;
+    color: #333333;
+    width: 10vw;
+    size: 2;
+    margin-bottom: 1.5vw;
+ }
+
+.select {
+    width: 100%; 
+    height: 6vw;
+ }
+ 
+
+.textInput{
+    width: 100%; 
+    height: 6vw;
+}
+
+hr {
+    width: 100%;
+    background-color: #e7e7e8;
+    margin: 2vw 0 2vw 0;
+}
+
+.email {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.newId {
+    font-family: "SFproText";
+    color: #666666;
+    margin: 1vw 0;
+    font-style: Light;
+    font-weight: Light;
+}
+
+.phoneVerify {
+    width: 90%;
+    font-family: "SFproText";
+    color: #666666;
+    margin: 1vw 0;
+    font-style: Light;
+    font-weight: Light;
+    margin-bottom: 2.5vw;
+}
+
+.PhoneVerifyradioButtons {
+    display: flex;
+    width: 43%;
+    height: 5vw;
+    justify-content: space-between;
+}
+
+.phoneVerifyBlock {
+    display: flex;
+}
+
+.radioPoint {
+    width: 1.7vw;
+    height: 1.7vw;
+    margin-right: 0.5vw;
+}
+
+.radioText {
+    white-space: nowrap; 
+}
+
+.hxz {
+    color: #000000;
+    font-size: 1.5vw;
+}
+
+.check {
+    margin-bottom: 2vw;
+    display: flex;
+    align-items: start;
+    width: 100%;
+    height: 5vw;
+}
+
+.checkboxBlock {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkText {
+    color: #727272;
+}
+
+.third {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.capchaImg {
+    width: 14vw;
+    height: 6vw;
+    background-image: url("../img/capcha.jpeg");
+    background-size: 14vw 6vw;
+}
+
+.fourth {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:start;
+}
+
+.capchaInput {
+    width: 28vw;
+    margin: 0vw 0 0.5vw 0;
+}
+
+.capchaBlock {
+    display: flex;
+    flex-direction: column;
+}
+
+.capchaButtonText {
+    color: #0070c9;
+    font-family: "SFproText";
+    font-style: Light;
+    font-weight: Light;
+    font-size: 1.2vw;
+    margin-left: 1vw;
+    margin-top: 0.2vw;
+}
+
+.hrDiv {
+    transform: rotate(90deg);
+    width: 2vw;
+}
+
+.caphaButton {
+    display: flex;
+    flex-direction: row;
+}
+
+.capchaButtons {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: left;
+}
+
+.capchaButtonImg {
+    width: 1.6vw;
+}
+
+.code {
+    transform: rotate(-40deg);
+}
+
+.securityText {
+    text-align: center;
+    font-size: 1.2vw;
+}
+
+.linkLabel {
+    color: #0472c9;
+    opacity: 1;
+    font-size: 1.2vw;
+}
+
+.securityImg {
+    width: 4.5vw;
+    margin-bottom: 1vw;
+}
+
+.securityButton {
+    width: 8vw;
+    height: 2.8vw;
+    background: linear-gradient(#42a1ec 40%, #227ac2 90%);
+    border: 0.1vw solid #227ac2;
+    border-radius: 0.3vw;
+    font-family: "SFproText";
+    font-style: Light;
+    font-weight: Light;
+    font-size: 1.35vw;
+    color: #ffffff;
+    margin-top: 2vw;
+}
+
+main {
+    margin-bottom: 4vw;
+}
+
+footer {
+    background-color: #f5f5f7;
+}
+
+.footer {
+    width: 90%;
+    margin: 2vw auto;
+    padding: 2vw 0 ;
+}
+
+.footerText {
+    color: #8d8d92;
+    font-size: 1.3vw;
+    font-family: "SFproText";
+    letter-spacing: -0.05vw;
+    text-align: left;
+    word-spacing: 0.08vw;
+    margin-bottom: 3vw;
+    width: 100%;
+    margin-bottom: 0.2vw;
+    line-height: 1.8vw;
+} 
+
+.linkFooter {
+    color: #0066cc;
+    opacity: 1;
+}
+
+.navFooter {
+    display: flex;
+    width: 40%;
+}
+
+.verify {
+    width: 25%;
+}
+
+.footerNavText {
+    color: #5b5b5e;
+    white-space: nowrap;
+    border-right: 0.1vw #c1c1c5 solid;
+    height: fit-content;
+    padding-right: 1vw;
+    margin-right: 1vw;
+}
+
+.navFooter :last-child {
+    border: none;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navFooter hr {
+   width: 3vw;
+}
+
+.US {
+    text-align: end;
+}
+
+a:hover {
+    opacity: 0.7;
+    transition: all 0.15s;
+}
+
+button:hover {
+    opacity: 0.8;
+    transition: all 0.15s;
+}
+ 
+.check {
+    position: relative;
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    width: 35%;
+    height: 35%;
+    left: -10.5vw;
+}
+
+
+.fieldset1 {
+    display: flex;
+}
